@@ -3,7 +3,7 @@ const chalk = require('chalk');
 const fs = require('fs');
 const prompt = require('prompt');
 var RandExp = require('randexp');
-const ProxyAgent = require('proxy-agent');
+const ProxyAgent = require('socks-proxy-agent');
 const codes = fs.readFileSync('CustomCodes.txt', 'utf-8').replace(/\r/gi, '').split('\n');
 var proxies = fs.readFileSync('proxies.txt', 'utf-8').replace(/\r/gi, '').split('\n');
 const config = require("./config.json");
@@ -27,9 +27,7 @@ function write(content, file) {
 }
 
 function claim(nitro) {
-    request({
-        url: `https://discordapp.com/api/v6/entitlements/gift-codes/${code}/redeem`,
-        method: "POST",
+    request.post(`https://discordapp.com/api/v6/entitlements/gift-codes/${code}/redeem`, {
         headers: {
             "Authorization": config.token
         }
@@ -61,17 +59,17 @@ function check(nitro) {
         switch (res.statusCode) {
             case 200:
                 work++;
-                console.log(chalk.green(`[${chalk.white('200')}] Working Nitro | %s |  %s`), nitro, proxy);
+                console.log(chalk.green(`[${chalk.white('!')}] Working Nitro | %s`), nitro);
+				write(nitro + "\n", "Nitros/working.txt");
                 claim(nitro);
-                write(nitro + "\n", "Nitros/working.txt");
                 break;
             case 404:
                 invalid++;
-                console.log(chalk.red(`[${chalk.white('401')}] (${invalid}) | ${chalk.white('Invalid Nitro')} | https://discord.gift/%s |  %s`), nitro, proxy);
+                console.log(chalk.red(`[${chalk.white('?')}] ${chalk.white('Invalid Nitro')} | https://discord.gift/%s`), nitro);
                 write("https://discord.gift/" + nitro + "\n", "Nitros/invalid.txt");
                 break
             case 429:
-                console.log(chalk.yellow(`[${chalk.white('429')}] | Rate Limited on %s`), proxy);
+                console.log(chalk.yellow(`[${chalk.white('*')}] Rate Limited on %s`), proxy);
                 failed++;
                 check(nitro);
                 break;
