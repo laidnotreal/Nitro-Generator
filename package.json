@@ -1,21 +1,20 @@
 {
-  "name": "tokenbrute",
+  "name": "Nitro Brute",
   "version": "2.0.0",
-  "description": "Token Brute forcing",
+  "description": "Nitro Brute forcing",
   "main": "index.js",
   "dependencies": {
     "chalk": "^4.1.1",
     "prompt": "^1.1.0",
-    "proxy-agent": "^4.0.1",
     "randexp": "^0.5.3",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "socks-proxy-agent": "^6.1.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "token",
+    "Nitro",
     "discord"
   ],
   "author": "Luci",
